@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css" >
+    <link rel="Shortcut Icon" href="assets/cartas/grey_back.png" type="x-icon"> 
+  </head>
+
+  <body>
+    <header class="titulo">
+      Blackjack
+    </header>
+
+    <div class="row mt-2">
+      <div id= 'divBotones' class="col text-center">
+        <button id='btnNuevo' class="btn btn-danger">Nuevo juego</button>
+        <button id='btnPedir' disabled='disabled' class="btn btn-primary">Pedir carta</button>
+        <button id='btnDetener' disabled='disabled' class="btn btn-primary">Detener</button>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col">
+        <h1> Jugaor 1 - <small>0</small></h1>
+        <div id="jugador-cartas" class="divCartas">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row container">
+      <div class="col">
+        <h1> PC  - <small>0</small></h1>
+        <div id="computadora-cartas" class="divCartas">
+          <!-- <img class='carta'  src="assets/cartas/QD.png" >  -->
+          <!-- <img class='carta'  src="assets/cartas/QD.png" > 
+          <img class='carta'  src="assets/cartas/QD.png" > 
+          <img class='carta'  src="assets/cartas/QD.png" >  -->
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/underscore-min.js"></script>
+    <!-- <script src="assets/js/juego.js"></script> -->
+    <script src="assets/js/juego-min.js" ></script>
+    <script>
+
+      document.querySelector('#btnNuevo').addEventListener('click',() =>{
+        moduloJuego.nuevoJueego();
+      });
+        
+    </script>
+  </body>
+</html>

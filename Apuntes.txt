@@ -1,0 +1,6 @@
+Cuando bajemos o hagamos una restaruración del respositorio.
+Debemos ejecutar la instrucción
+
+npm install 
+
+Dicha instrucción nos instalara las dependencias que esten dentro del package.json
